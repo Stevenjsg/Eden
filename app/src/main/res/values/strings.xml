@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EDÉN</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="user">Usuario</string>
+    <string name="passw">Contraseña</string>
+    <string name="enter">Entrar</string>
+    <string name="back">Atrás</string>
+    <string name="exit">Salir</string>
+    <string name="lblLogin">*Sólo para administradores</string>
+    <string name="empresa">Florería</string>
+    <string name="omitir">Sino es administrador, haga click aquí!</string>
+    <string name="bienvenido">BIENVENIDO:  </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="precio">Precio:</string>
+    <string name="cantidad">Stock:</string>
+    <string name="descripcion">Descripción:</string>
+    <string name="nombre_producto"><![CDATA[<Nombre_producto>]]></string>
+    <string name="descripcion_producto"><![CDATA[<DESCRIPCION>]]></string>
+    <string name="numPrecio">999,999</string>
+    <string name="numCant">999</string>
+    <string name="delete">Eliminar</string>
+    <string name="add">Editar</string>
+    <string name="productos">Productos</string>
+    <string name="nombres_administrador">NomAdmin</string>
+    <string name="nomProducto">Nombre de producto:</string>
+    <string name="id">ID:</string>
+</resources>

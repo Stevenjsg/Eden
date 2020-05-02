@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="900dp"
+    android:layout_margin="0dp"
+    android:background="@color/design_default_color_on_primary"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppinsbolditalic"
+            android:shadowColor="@color/colorAccent"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@id/txtsubLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/txtsubLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:shadowColor="@color/colorAccent"
+            android:text="@string/empresa"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintBottom_toTopOf="@id/iconLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtLogo" />
+
+        <!--Tarjeta de incio de sesion-->
+
+        <ImageView
+            android:id="@+id/iconLogo"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@id/txtLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtsubLogo"
+            app:srcCompat="@drawable/ic_background" />
+
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbolditalic"
+            android:shadowColor="@color/colorAccent"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+            android:textColor="@color/colorSecondaryText"
+            app:layout_constraintBottom_toTopOf="@+id/txtUser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iconLogo"/>
+
+        <!--EditText Para el usuario -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtUser"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/user"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColorHint="@color/colorAccent"
+            app:boxBackgroundColor="@color/design_default_color_on_primary"
+            app:boxBackgroundMode="filled"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/error"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@id/txtPass"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtLogin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--EditText Para el contraseña -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPass"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/passw"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColorHint="@color/colorAccent"
+            app:boxBackgroundColor="@color/design_default_color_background"
+            app:boxBackgroundMode="filled"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/error"
+            app:hintTextColor="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@id/lblInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtUser"
+            app:passwordToggleContentDescription="Mostrar Contraseña"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTintMode="multiply">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/lblInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/lblLogin"
+            android:textColor="@color/colorSecondaryText"
+            app:layout_constraintBottom_toTopOf="@+id/btnEntrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPass" />
+        <!-- Contenedor para los botones-->
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="oncliker"
+            android:text="@string/enter"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblInfo" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginBottom="31dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@color/colorAccent"
+            android:onClick="omitir"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
