@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void omitir(View view) {
+        this.setVisible(false);
         Intent i = new Intent(this, ClientActivity.class);
         startActivity(i);
     }

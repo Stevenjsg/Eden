@@ -75,7 +75,8 @@
             app:layout_constraintBottom_toTopOf="@+id/txtUser"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/iconLogo"/>
+            app:layout_constraintTop_toBottomOf="@id/iconLogo"
+            android:gravity="center_horizontal" />
 
         <!--EditText Para el usuario -->
         <com.google.android.material.textfield.TextInputLayout
@@ -167,10 +168,11 @@
             android:layout_marginRight="27dp"
             android:layout_marginBottom="31dp"
             android:clickable="true"
+            android:onClick="omitir"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@color/colorAccent"
-            android:onClick="omitir"/>
+            app:srcCompat="@color/colorAccent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
