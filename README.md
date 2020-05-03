@@ -7,24 +7,24 @@ La intención de la aplicación es crear una CRUD para la lista de productos. La
 ### Primer layout
 Iniciar Sesión:
 
-![Principal](https://github.com/Stevenjsg/Eden/tree/master/screenshot/iniciarSesion.png "activity_main.xml") 
+![Principal](/screenshot/iniciarSesion.png "activity_main.xml") 
 
 ### Segundo layout
 Lista de producto:
 
-![Lista](https://github.com/Stevenjsg/Eden/tree/master/screenshot/listProduct.png "activity_client.xml")
+![Lista](/screenshot/listProduct.png "activity_client.xml")
 
 #### Card
     Para crear un nuevo item de la lista primero se debe crear una plantilla:
 
-![card](https://github.com/Stevenjsg/Eden/tree/master/screenshot/card.png "tarjeta.xml") 
+![card](/screenshot/card.png "tarjeta.xml") 
 
 ### Tercer layout
 Modificar productos:
 
-![Modificar](https://github.com/Stevenjsg/Eden/tree/master/screenshot/updateProc.png "fragment_edit.xml") 
+![Modificar](/screenshot/updateProc.png "fragment_edit.xml") 
 
 ### Cuarto layout
 Añadir productos:
 
-![Crear](https://github.com/Stevenjsg/Eden/tree/master/screenshot/addProduct.png "fragment_edit.xml") 
+![Crear](/screenshot/addProduct.png "fragment_edit.xml") 
